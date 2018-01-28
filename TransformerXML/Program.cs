@@ -10,13 +10,15 @@ namespace TransformerXML
     {
         static void Main(string[] args)
         {
+            string path = @"E:\Project\VS\TransformerXML\";
+
             Transformer tr = new Transformer
-            {
-                InputXML = @"data\books.xml",
-                InputXSD = @"data\books.xsd",
-                OutputXML = @"data\books_new.xml",
-                OutputXSD = @"data\books_new.xsd",
-                TemplateXSL = @"data\books.xsl"
+            {                
+                InputXML = path + @"data\books.xml",
+                InputXSD = path + @"data\books.xsd",
+                OutputXML = path + @"data\books_new.xml",
+                OutputXSD = path + @"data\books_new.xsd",
+                TemplateXSL = path + @"data\books.xsl"
             };
 
             tr.TransformAsync();
