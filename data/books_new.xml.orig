@@ -22,6 +22,10 @@
       <first-name>Ihar</first-name>
       <last-name></last-name>
     </author>
+<<<<<<< .merge_file_a11700
+    <price>10.99</price>
+=======
     <price>11.99</price>
+>>>>>>> .merge_file_a04116
   </book>
 </bookstore>
